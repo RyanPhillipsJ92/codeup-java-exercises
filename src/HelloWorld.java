@@ -41,13 +41,13 @@ public class HelloWorld {
 
 //        int three = (int) "three";
 
-        int x = 4;
-        x = x + 5;
-        x +=5;
+//        int x = 4;
+//        x = x + 5;
+//        x +=5;
 
         int x = 3;
         int y = 4;
-        y = y * x;
+//        y = y * x;
         y *= x;
     }
 }
