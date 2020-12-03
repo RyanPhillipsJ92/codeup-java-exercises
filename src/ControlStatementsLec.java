@@ -1,17 +1,21 @@
-public class ControlStatementsLec {
+import java.util.Scanner;
 
-    // ==================== Boolean Expressions
+public class ControlStatementsLec {
+    public static void main(String[] args) {
+        // ==================== Boolean Expressions
 
         // no >== ,or <==, or === because only value comparisons are available
         // truthy and falsy values don't exist in Java
 
-        //        int randomNumber = 6;
+//        int randomNumber = 6;
 //        System.out.println(randomNumber == 6);
-
-        //        char randomChar = 'Y';
+//
+//                char randomChar = 'Y';
 //        System.out.println(randomChar == 'y');
-
-
+//
+//        int num1 = 6;
+//        int num2 = 6;
+//        System.out.println(num1 == num2);
         // ==================== Logical Operators
 
         // && will only check second value if first is true
@@ -22,8 +26,8 @@ public class ControlStatementsLec {
         // x will only increment in second condition if first condition is true using &&
 //                int x = 2;
 //                int y = 3;
-
-        //                if (true && ++x == y) {
+//
+//                        if (true && ++x == y) {
 //                    System.out.println("Equal");
 //                } else {
 //                    System.out.println("Not equal");;
@@ -31,20 +35,19 @@ public class ControlStatementsLec {
 //                System.out.println(x);
 
 
-        // ==================== Slide 7
+        // ==================== Strings
 
         // DO NOT COMPARE STRINGS WITH == !!!!
 
-        //                Scanner sc = new Scanner(System.in);
+//                        Scanner sc = new Scanner(System.in);
 //                String cat1 = sc.nextLine();
 //                String cat2 = "cat";
 //                System.out.println(cat1);
 //                System.out.println(cat2);
-//                System.out.println(cat1 == cat2);
+//                System.out.println(cat1.equals(cat2));
 
         // do use equals(),
-
-        //    boolean stringValuesAreEqual = "Test".equals("Tes");
+//            boolean stringValuesAreEqual = "Test".equals("Test");
 //    System.out.printf("The result is: %s", stringValuesAreEqual);
 
 
@@ -59,25 +62,24 @@ public class ControlStatementsLec {
 //System.out.println(!tech.equalsIgnoreCase("tool"));
 
 
-
         // ==================== Switch Case
 
         // basically the same as JS :)
 
 
-//            String caseSwitch = "Fred";
-//            switch (caseSwitch) {
-//                case "bob":
-//                    System.out.println("Case 1");
-//                    break;
-//                case "fred":
-//                    System.out.println("Case 2");
-//                    break;
-//                default :
-//                    System.out.println("Default case");
-//                    break;
-//            }
+            String caseSwitch = "Fred";
+            switch (caseSwitch) {
+                case "bob":
+                    System.out.println("Case 1");
+                    break;
+                case "fred":
+                    System.out.println("Case 2");
+                    break;
+                default :
+                    System.out.println("Default case");
+                    break;
+            }
 
-
+    }
 
 }
