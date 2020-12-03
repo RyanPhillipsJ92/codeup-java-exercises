@@ -137,66 +137,66 @@ public class ControlFlowExercises {
 
 
 //        String userChoice = "y";
-        do {
-            System.out.println("Enter a numerical grade from 0 - 100");
-            int numberGrade = userInput.nextInt();
-            System.out.println();
-
-
-            int quotient = numberGrade / 10;
-            int remainder = numberGrade % 10;
-
-            // This will hold the final letter grade
-            String letterGrade ;
-
-            switch (quotient) {
-                case 10:
-                    // The student got a 100%, so just return A+
-                    letterGrade = "A";
-                    break;
-                case 9:
-                    // 90-99 is an A
-                    letterGrade = "A";
-                    break;
-                case 8:
-                    // 80-89 is a B
-                    letterGrade = "B";
-                    break;
-                case 7:
-                    // 70-79 is a C
-                    letterGrade = "C";
-                    break;
-                case 6:
-                    // 60-69 is a D
-                    letterGrade = "D";
-                    break;
-                default:
-                    // Anything 59 or below is an F
-                    System.out.println("F");
-            }
-
-            switch (remainder) {
-                // For example, 70-73 are C-
-                case 0:
-                case 1:
-                case 2:
-                case 3:
-                    letterGrade += "-";
-                    break;
-                // Likewise, 77-79 are C+
-                case 7:
-                case 8:
-                case 9:
-                    letterGrade += "+";
-                    break;
-                // Everything else just falls through, no + or - needed
-            }
-
-
-            System.out.println(letterGrade);
-            System.out.print("Continue? (y/n): ");
-            userChoice = userInput.next();
-        } while (!userChoice.equalsIgnoreCase("n"));
+//        do {
+//            System.out.println("Enter a numerical grade from 0 - 100");
+//            int numberGrade = userInput.nextInt();
+//            System.out.println();
+//
+//
+//            int quotient = numberGrade / 10;
+//            int remainder = numberGrade % 10;
+//
+//            // This will hold the final letter grade
+//            String letterGrade ;
+//
+//            switch (quotient) {
+//                case 10:
+//                    // The student got a 100%, so just return A+
+//                    letterGrade = "A";
+//                    break;
+//                case 9:
+//                    // 90-99 is an A
+//                    letterGrade = "A";
+//                    break;
+//                case 8:
+//                    // 80-89 is a B
+//                    letterGrade = "B";
+//                    break;
+//                case 7:
+//                    // 70-79 is a C
+//                    letterGrade = "C";
+//                    break;
+//                case 6:
+//                    // 60-69 is a D
+//                    letterGrade = "D";
+//                    break;
+//                default:
+//                    // Anything 59 or below is an F
+//                    System.out.println("F");
+//            }
+//
+//            switch (remainder) {
+//                // For example, 70-73 are C-
+//                case 0:
+//                case 1:
+//                case 2:
+//                case 3:
+//                    letterGrade += "-";
+//                    break;
+//                // Likewise, 77-79 are C+
+//                case 7:
+//                case 8:
+//                case 9:
+//                    letterGrade += "+";
+//                    break;
+//                // Everything else just falls through, no + or - needed
+//            }
+//
+//
+//            System.out.println(letterGrade);
+//            System.out.print("Continue? (y/n): ");
+//            userChoice = userInput.next();
+//        } while (!userChoice.equalsIgnoreCase("n"));
 
 
 
