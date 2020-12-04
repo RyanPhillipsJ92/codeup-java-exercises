@@ -8,15 +8,14 @@ public class Bob {
        do {
            System.out.println("Say something to our good friend Bob!");
             bobsSentence = userInput.nextLine();
-           if (bobsSentence.trim().indexOf("?") > 0){
+           if (bobsSentence.trim().endsWith("?")){
                System.out.println("sure");
-           }else if (bobsSentence.trim().indexOf("!") > 0){
+           }else if (bobsSentence.trim().endsWith("!")){
                System.out.println("Whoa, Chill out!");
            }else if (bobsSentence.trim().equalsIgnoreCase("")){
                System.out.println("Fine. Be that way!");
            }else if (bobsSentence.trim().equalsIgnoreCase("bye")){
                System.out.println("...Bob didn't want to talk to you anyway!");
-               break;
            }else {
                System.out.println("Whatever.");
            }
