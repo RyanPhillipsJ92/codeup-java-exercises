@@ -22,7 +22,7 @@ public class StringLecture {
 
 
 // ------ .endsWith(String suffix)
-
+//
 //        String travisParkAddress = "311 E Travis St, San Antonio, TX 78205";
 //        String codeUpZip = "78205";
 //        boolean sameZipAsCodeup = travisParkAddress.endsWith(codeUpZip);
@@ -107,14 +107,14 @@ public class StringLecture {
 
 // convert word to pig latin word (assume word doesn't begin with a vowel or end in ay)
 
-        //String word1 = "cat";
-        //String pigLatinWord = word1
-        //    .trim()
-        //    .toLowerCase()
-        //    .substring(1)
-        //    .concat(word1.substring(0, 1).toLowerCase())
-        //    .concat("ay");
-        //System.out.println(pigLatinWord);
+//        String word1 = "cat";
+//        String pigLatinWord = word1
+//            .trim() //"cat"
+//            .toLowerCase() //"cat"
+//            .substring(1)//"at"
+//            .concat(word1.substring(0, 1).toLowerCase())//"atc"
+//            .concat("ay");//"atcay"
+//        System.out.println(pigLatinWord);
 
 
 
