@@ -255,5 +255,12 @@ public class ControlFlowExercises {
 //       }while (!userChoice.equalsIgnoreCase("n"));
 
 
+
+
+      String hi = "765654";
+      int hello = 5;
+        System.out.println(hi +hello);
+        System.out.println(hi);
     }
+
 }
