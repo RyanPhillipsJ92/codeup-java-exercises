@@ -34,20 +34,20 @@ public class OOP_Lec {
 
             // ======================== slide 4 (object fields)
 
-            Person rick = new Person();
-            rick.firstName = "Rick";
-            rick.lastName = "Sanchez";
-            System.out.println(rick.sayHello('?'));
+//            Person rick = new Person();
+//            rick.firstName = "Rick";
+//            rick.lastName = "Sanchez";
+//            System.out.println(rick.sayHello('?'));
 
             // -- Dog Method Example --
 
-//            Dog d1 = new Dog();
-//            d1.age = 3;
-//            d1.breed = "corgi";
-//            d1.canBreed = false;
-//            d1.name = "Tater";
+            Dog d1 = new Dog();
+            d1.age = 3;
+            d1.breed = "corgi";
+            d1.canBreed = false;
+            d1.name = "Tater";
 //
-//            d1.callForDog("Tater");
+            d1.callForDog("Tater");
 
 
             // ======================== slide 5 (class fields)
@@ -58,10 +58,14 @@ public class OOP_Lec {
 //            System.out.println(Arithmetic.multiply(5, 5));
 
             // -- DogHelper Example --
+            Dog dog = new Dog();
+            dog.name = "Sparky";
+            dog.age = 3;
+            dog.callForDog("Sparky");
 
+            System.out.println(DogHelper.NUMBER_OF_DOG_BREEDS);
 
-
-
+            System.out.println(DogHelper.humanToDogYears(dog.age));
             // ======================== slide 7 (class vs. object fields)
 
 //            oop_lec.Person theBestDrummerAlive = new oop_lec.Person();

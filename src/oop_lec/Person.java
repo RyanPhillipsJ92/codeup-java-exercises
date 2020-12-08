@@ -20,23 +20,24 @@ public class Person {
 
 
         // SLIDE 7
-//        public static long worldPopulation = 7_500_000_000L; // class property
-//        public String name;                                  // instance property
+        public static long worldPopulation = 7_500_000_000L; // class property
+        public String name;                                  // instance property
 //
-//        public static void main(String[] args) {
+        public static void main(String[] args) {
 //
-//                System.out.println(oop_lec.Person.worldPopulation);
-//                oop_lec.Person.worldPopulation -= 1;
-//                System.out.println(worldPopulation);
+                System.out.println(Person.worldPopulation);
+                Person.worldPopulation -= 1;
+                System.out.println(worldPopulation);
 //
 //
-//                oop_lec.Person theBestDrummerAlive = new oop_lec.Person();
-//                theBestDrummerAlive.name = "Neil Peart";
-//                oop_lec.Person.worldPopulation += 1; // accessing a static property
-//                // this also works, but is usually not a good idea
-//                System.out.println(theBestDrummerAlive.worldPopulation); // 7500000001
-//                // DONT DO THIS, it will not compile
-////                 System.out.println(oop_lec.Person.name);
-//        }
+                Person theBestDrummerAlive = new Person();
+                theBestDrummerAlive.name = "Neil Peart";
+                Person.worldPopulation += 1; // accessing a static property
+                // this also works, but is usually not a good idea
+                System.out.println(theBestDrummerAlive.worldPopulation); // 7500000001
+                // DONT DO THIS, it will not compile
+//                 System.out.println(Person.name);
+                System.out.println(Person.worldPopulation);
+        }
 
 }
