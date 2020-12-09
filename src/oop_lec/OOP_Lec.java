@@ -81,6 +81,11 @@ public class OOP_Lec {
 
 
             // ======================== slide 8 (constructors)
+//            Student s1 = new Student();
+//            Student s2 = new Student();
+//            s2.testMethod();
+//            Student s3 = new Student("Billy Bob", "Jupiter");
+
 
 //            Student jane = new Student("Jane Doe", "Zion");
 //            System.out.print(jane.name + " - ");
@@ -102,12 +107,15 @@ public class OOP_Lec {
 
             // ======================== slide 10 (visibility)
 
-//            Student student = new Student("John Doe", 82.4);
-//            System.out.println(student.name) // "John Doe"
-//            // DON'T DO THIS - can't access private properties outside the class
+            Student student = new Student("John Doe", 82.4);
+            System.out.println(student.name);// "John Doe"
+            student.name = "Robert Smith";
+            System.out.println(student.name);
+            // DON'T DO THIS - can't access private properties outside the class
 //            System.out.println(student.grade);
-//            System.out.println(student.shareGrade()); // Do this instead
-
+            System.out.println(student.shareGrade()); // Do this instead
+            student.changeGrade(70);
+            System.out.println(student.shareGrade());
 
        }
 

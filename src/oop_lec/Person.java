@@ -2,42 +2,48 @@ package oop_lec;
 
 public class Person {
 
-//        // SLIDE 3
-//        public String firstName;
-//        public String lastName;
+        private String name;
 
-
-        // SLIDE 4
-
-//        // instance variables
-        public String firstName;
-        public String lastName;
-//
-//        // instance method
-        public String sayHello(char punctuation) {
-                return lastName + ", " + firstName + " says hi" + punctuation;
+        public Person(){
+                this.name = "default";
         }
 
+        public Person(String name){
+                this.name = name;
+        }
 
-        // SLIDE 7
-        public static long worldPopulation = 7_500_000_000L; // class property
-        public String name;                                  // instance property
-//
+        public String getName(){
+        //TODO: return the person's name
+                return this.name;
+        }
+
+        public void setName(String name) {
+                this.name = name;
+        }
+        public void sayHello(){
+//TODO: print a message to the console using the person's name
+                System.out.printf("Hello %s, How are you?%n", name);
+        }
+
         public static void main(String[] args) {
+
+//              Person person1 = new Person("John");
+//                Person person2 = new Person("John");
+//                System.out.println(person1.getName().equals(person2.getName()));
+//                System.out.println(person1 == person2);
 //
-                System.out.println(Person.worldPopulation);
-                Person.worldPopulation -= 1;
-                System.out.println(worldPopulation);
-//
-//
-                Person theBestDrummerAlive = new Person();
-                theBestDrummerAlive.name = "Neil Peart";
-                Person.worldPopulation += 1; // accessing a static property
-                // this also works, but is usually not a good idea
-                System.out.println(theBestDrummerAlive.worldPopulation); // 7500000001
-                // DONT DO THIS, it will not compile
-//                 System.out.println(Person.name);
-                System.out.println(Person.worldPopulation);
+//                Person person1 = new Person("John");
+//                Person person2 = person1;
+//                System.out.println(person1 == person2);
+
+                Person person1 = new Person("John");
+                Person person2 = new Person();
+                System.out.println(person1.getName());
+                System.out.println(person2.getName());
+                person2.setName("Jane");
+                person1.setName("John");
+                System.out.println(person1.getName());
+                System.out.println(person2.getName());
         }
 
 }
