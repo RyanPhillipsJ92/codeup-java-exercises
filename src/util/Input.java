@@ -15,11 +15,11 @@ public class Input {
         return this.sc.nextLine();
     }
 
-    boolean yesNo(){
+    public boolean yesNo(){
         System.out.println("Please enter 'y' or 'yes'.");
          String userInput = this.sc.nextLine().trim();
         return userInput.equalsIgnoreCase("y") ||
-                (userInput.equalsIgnoreCase("yes"));
+                userInput.equalsIgnoreCase("yes");
     }
 
     int getInt(int min, int max){
