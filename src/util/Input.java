@@ -50,7 +50,10 @@ public class Input {
         return this.sc.nextDouble();
     }
 
-
+//public System getString(String prompt){
+//    System.out.println(prompt);
+//    return getString();
+//}
 }
 
 

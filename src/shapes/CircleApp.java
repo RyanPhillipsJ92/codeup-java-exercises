@@ -12,6 +12,7 @@ public class CircleApp {
            more = moreCircles.yesNo();
         }while (more);
 
+        System.out.println("You have created " + Circle.returnCircleCount() + "circles, bye.");
 
     }
 }
