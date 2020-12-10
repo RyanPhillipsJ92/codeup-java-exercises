@@ -36,16 +36,16 @@ public class ArraysLec {
 
 
         // Dog Example
-        Dog d1 = new Dog("Bean", 1);
-        Dog d2 = new Dog("Patch", 3);
-        Dog d3 = new Dog("Rolo", 5);
+//        Dog d1 = new Dog("Bean", 1);
+//        Dog d2 = new Dog("Patch", 3);
+//        Dog d3 = new Dog("Rolo", 5);
 //
 //
 //        //Declaring a Dog array variable called dogs and creating a new Dog array with a length of 4
-        Dog[] dogs = new Dog[4];
-        dogs[0] = d1;
-        dogs[1] = d2;
-        dogs[2] = d3;
+//        Dog[] dogs = new Dog[4];
+//        dogs[0] = d1;
+//        dogs[1] = d2;
+//        dogs[2] = d3;
 
 
 
@@ -142,12 +142,15 @@ public class ArraysLec {
 
 
         // ***Example1: BONUS ***
-//        int[] numArray = {1,1,1,1,1,1,1,1,1,1};
-//
-//        Arrays.fill(numArray, 0, 4, 5);
-//        for (int element : numArray) {
-//            System.out.println(element);
-//        }
+        //array with 10 elements all being int = to 1
+        int[] numArray = {1,1,1,1,1,1,1,1,1,1};
+        //fill elements from index 0 to index 3 to the val of 5
+        // {5,5,5,5,1,1,1,1,1,1}
+        Arrays.fill(numArray, 0, 4, 5);
+        //for each element print out that element
+        for (int element : numArray) {
+            System.out.println(element);
+        }
 
 
 
@@ -160,9 +163,9 @@ public class ArraysLec {
         // Example 2: Arrays.equals(array1, array2)
         // Returns true if two array elements are equal and in the same order
 
-//        String[] words = {"Mushroom", "Mushroom"};
-//        String[] words2 = {"Mushroom", "mushroom"};
-//        System.out.println(Arrays.equals(words, words2));
+        String[] words = {"Mushroom", "Mushroom"};
+        String[] words2 = {"Mushroom", "mushroom"};
+        System.out.println(Arrays.equals(words, words2));
 
 
 
@@ -175,11 +178,11 @@ public class ArraysLec {
         // Example 3: Arrays.copyOf()
         // Returns a copy array of a given array of a given length
 
-//        String[] badgerArray = new String[4];
-//        Arrays.fill(badgerArray, "Badgers");
-//
-//        String[] twoBadgers = Arrays.copyOf(badgerArray, 2);
-//        System.out.println(Arrays.toString(twoBadgers));
+        String[] badgerArray = new String[4];
+        Arrays.fill(badgerArray, "Badgers");
+
+        String[] twoBadgers = Arrays.copyOf(badgerArray, 2);
+        System.out.println(Arrays.toString(twoBadgers));
 
 
 
@@ -193,11 +196,11 @@ public class ArraysLec {
         // Example 4: Arrays.sort(array, startIndex, toIndex)
         // Sorts array elements alphabetically/numerically 2nd and 3rd arguments are optional.
 
-//        String[] animals = {"Dog", "Rabbit", "Cat", "Snake", "Fish"};
-//        System.out.println(Arrays.toString(animals));
-//
-//        Arrays.sort(animals);
-//        System.out.println(Arrays.toString(animals));
+        String[] animals = {"Dog", "Rabbit", "Cat", "Snake", "Fish"};
+        System.out.println(Arrays.toString(animals));
+
+        Arrays.sort(animals);
+        System.out.println(Arrays.toString(animals));
 
 
 
