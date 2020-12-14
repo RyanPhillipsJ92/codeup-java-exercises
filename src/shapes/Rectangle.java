@@ -2,21 +2,20 @@ package shapes;
 
 public class Rectangle {
 
-    protected long length;
-    protected long width;
-    protected long area;
+    protected int length;
+    protected int width;
 
-
-    public Rectangle (long length, long width){
+    public Rectangle (int length, int width){
     this.length = length;
     this.width = width;
     }
 
-    public long  getArea(long length, long width){
+
+    public int  getArea(){
         return length * width;
     }
 
-    public long  getPerimeter(long length, long width){
+    public int  getPerimeter(){
         return length * 2 + width * 2;
     }
 
