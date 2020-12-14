@@ -22,9 +22,10 @@ public class Developer extends Employee{
             Bob.doWork();
 
 
-            Developer John = new Developer();
-//             System.out.println(John.getName());
+            Developer John = new Developer("John");
+             System.out.println(John.getName());
             John.doWork();
             John.debug();
+            System.out.println(John.name);
     }
 }

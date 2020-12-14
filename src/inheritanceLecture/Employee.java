@@ -1,7 +1,7 @@
 package inheritanceLecture;
 
 public class Employee {
-    public String name;
+    protected String name;
     public int id;
     public static String company;
     public Employee(){
