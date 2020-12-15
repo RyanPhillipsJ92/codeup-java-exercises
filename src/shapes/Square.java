@@ -2,24 +2,24 @@ package shapes;
 
 public class Square extends Rectangle {
 
-    protected int sides;
+    protected double sides;
 
-    public Square(int side){
+    public Square(double side){
         super(side, side);
         sides = side;
     }
 
 
 
-    public int  getArea(){
+    public double  getArea(){
         System.out.println("Square get area");
 
-        return  length* width;
-//        return (int) Math.pow(sides, 2);
+//        return  length * width;
+        return Math.pow(sides, 2);
     }
 
 
-    public int  getPerimeter(){
+    public double  getPerimeter(){
         System.out.println("Square get perimeter");
         return sides * 4;
     }
