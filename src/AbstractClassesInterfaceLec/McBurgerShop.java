@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class McBurgerShop implements McFranchise {
+
     String companyName = "McDonald's"; // this String is CONSTANT
 
     private List<String> menuItems;
@@ -13,30 +14,7 @@ public class McBurgerShop implements McFranchise {
     private int closeTime;
     private boolean iceCreamTime;
 
-    public static void main(String[] args) {
-        // Let's try to access some of a McBurgerShop's items /methods
-        List<String> theseMenuItems = new ArrayList<>();
-        theseMenuItems.add("Big Mac");
-        theseMenuItems.add("French Fries");
-        theseMenuItems.add("Quarter Pounder");
-
-        List<String> theseCatagories = new ArrayList<>();
-        theseCatagories.add("Entrees");
-        theseCatagories.add("Sides");
-      theseCatagories.add("Drinks");
-        McBurgerShop mcDonaldsSanAntonio = new McBurgerShop( theseMenuItems, theseCatagories, 200, 800, 2300, true);
-
-
-        for (String thisItem: mcDonaldsSanAntonio.getMenuItems() ) {
-
-            mcDonaldsSanAntonio.broilStuff(thisItem);
-
-//            System.out.println("Menu Item: " + thisItem);
-        }
-
-    }
-
-//Constructor for McBurgerShop
+    //Constructor for McBurgerShop
     public McBurgerShop(List<String>menuItems, List<String>menuCategories, int seatingCapacity, int openTime, int closeTime, boolean iceCreamTime){
         this.menuItems = menuItems;
         this.menuCategories = menuCategories;
@@ -46,28 +24,27 @@ public class McBurgerShop implements McFranchise {
         this.iceCreamTime = iceCreamTime;
     }
 
-
-    //NO CONSTRUCTOR IN INTERFACE  (ONLY IN ABSTRACT CLASSES)
-
     // Abstract Methods (That we have to completely write out in any
     // class that IMPLEMENTS this interface
-@Override
+    @Override
     public void broilStuff(String menuItem){
-    System.out.println("Cooking up a lovely " + menuItem);
+        System.out.println("Cooking up a lovely " + menuItem);
     }
-@Override
+    @Override
     public void businessHours(int open, int close){
         System.out.println("Open: " + open + " Close : " + close);
 
     }
-@Override
+    @Override
     public String iceCreamMachineWorking(){
-     if (this.iceCreamTime){
-         return "Time for Ice Cream!";
-     }else {
-         return "No Ice Cream for YOU!";
-     }
+        if (this.iceCreamTime){
+            return "Time for Ice Cream!";
+        }else {
+            return "No Ice Cream for YOU!";
+        }
     }
+
+
 
     //GETTERS & SETTERS
 
@@ -126,4 +103,37 @@ public class McBurgerShop implements McFranchise {
     public void setIceCreamTime(boolean iceCreamTime) {
         this.iceCreamTime = iceCreamTime;
     }
+    public static void main(String[] args) {
+        // Let's try to access some of a McBurgerShop's items /methods
+        List<String> theseMenuItems = new ArrayList<>();
+        theseMenuItems.add("Big Mac");
+        theseMenuItems.add("French Fries");
+        theseMenuItems.add("Quarter Pounder");
+
+        List<String> theseCatagories = new ArrayList<>();
+        theseCatagories.add("Entrees");
+        theseCatagories.add("Sides");
+      theseCatagories.add("Drinks");
+        McBurgerShop mcDonaldsSanAntonio = new McBurgerShop( theseMenuItems, theseCatagories, 200, 800, 2300, true);
+        System.out.println(mcDonaldsSanAntonio.companyName);
+
+        for (String thisItem: mcDonaldsSanAntonio.getMenuItems() ) {
+
+            mcDonaldsSanAntonio.broilStuff(thisItem);
+
+//            System.out.println("Menu Item: " + thisItem);
+        }
+
+        //Creat an instance of AustinMcD, which implements methods slightly differently than McBurgerShop
+        AustinMcD austinMcDonalds = new AustinMcD(theseMenuItems, theseCatagories, 200, 800, 2300, true);
+        System.out.println(austinMcDonalds.companyName);
+        for (String thisItem: austinMcDonalds.getMenuItems() ) {
+                // See how austin cooks their items
+            austinMcDonalds.broilStuff(thisItem);
+
+//            System.out.println("Menu Item: " + thisItem);
+        }
+
+    }
+
 }
