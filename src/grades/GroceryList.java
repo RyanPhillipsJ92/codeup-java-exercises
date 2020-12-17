@@ -32,17 +32,16 @@ public class GroceryList {
         // code block
 
 //        1 )Given an ordered list of grocery categories to choose from, select the category.
-//                     display prewritten list of catagories as an ARRAY LIST
-//                            What catagory do they choose
-//                                Save user input for Catagory, item, and quantity to insert to hashmap
-//
+//                     display prewritten list of categories as an ARRAY LIST
+//                            What category do they choose
+//                                Save user input for Category, item, and quantity to insert to hashmap
 
 //                2) Enter the name of the item.
 //                      What is the name?
 
 //                3) Enter how many of the item.
-//                What is the quantity
-//                Would you like to add another item  - (if no exit if yes repeat step 1 - 3)
+//                       What is the quantity
+//                          Would you like to add another item  - (if no exit if yes repeat step 1 - 3)
     }
 
 

@@ -12,7 +12,7 @@ public class GradesApplication{
     public static void main(String[] args) {
         HashMap<String, Student> students = new HashMap<>();
 
-          Student Bob = new Student("Bob",100);
+          Student Bob = new Student("Bob");
              students.put("BigBobsBeepers", Bob);
                  Bob.addGrade(100);
                  Bob.addGrade(95);
