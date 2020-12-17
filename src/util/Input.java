@@ -10,7 +10,7 @@ public class Input {
         this.sc = new Scanner(System.in);
     }
 
-    String getString(){
+   public  String getString(){
         System.out.println("Please enter a string.");
         return this.sc.nextLine();
     }
@@ -49,6 +49,8 @@ public class Input {
         System.out.println("Enter a Number.");
         return this.sc.nextDouble();
     }
+
+
 
 //public System getString(String prompt){
 //    System.out.println(prompt);
