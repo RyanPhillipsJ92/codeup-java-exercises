@@ -11,7 +11,7 @@ public class Input {
     }
 
    public  String getString(){
-        System.out.println("Please enter a string.");
+//        System.out.println("Please enter a string.");
         return this.sc.nextLine();
     }
 
@@ -27,27 +27,41 @@ public class Input {
         do {
         System.out.printf("please enter a number between %d and %d%n",min, max);
         userNumber = this.sc.nextInt();
-    }while(userNumber <= min || userNumber >= max);
+    }while(userNumber <= min || userNumber > max);
         return userNumber;
     }
 
 
     int getInt(){
-        System.out.println("Enter a Number.");
-            return this.sc.nextInt();
+        System.out.println("Enter an Integer.");
+        try {
+            return Integer.parseInt(getString());
+        }catch (NumberFormatException e) {
+            e.printStackTrace(System.out);
+            return getInt();
+        }
+
     }
 
     double getDouble(double min, double max){
-        double userNumber;
-        do {
-            System.out.printf("please enter a number between %.2f and %.2f%n",min, max);
-            userNumber = this.sc.nextDouble();
-        }while(userNumber <= min || userNumber >= max);
-        return userNumber;
+        try {
+            do {
+                System.out.printf("please enter a number between %.2f and %.2f%n", min, max);
+            } while (Double.parseDouble(getString()) <= min || Double.parseDouble(getString()) >= max);
+            return Double.parseDouble(getString());
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+            return getDouble(min,max);
+        }
     }
     double getDouble(){
-        System.out.println("Enter a Number.");
-        return this.sc.nextDouble();
+        System.out.println("Enter a Number with a decimal.");
+        try {
+            return Double.parseDouble(getString());
+        } catch (NumberFormatException e) {
+            e.printStackTrace(System.out);
+            return getDouble();
+        }
     }
 
 

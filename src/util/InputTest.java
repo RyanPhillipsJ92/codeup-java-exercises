@@ -3,10 +3,11 @@ package util;
 public class InputTest {
    public static void main(String[] args) {
        Input input = new Input();
-      String test = input.getString();
-       System.out.println(test);
-       boolean test1 = input.yesNo();
-       System.out.println(test1);
+//       System.out.println("enter a string");
+//      String test = input.getString();
+//       System.out.println(test);
+//       boolean test1 = input.yesNo();
+//       System.out.println(test1);
        int test2 = input.getInt(10,50);
        System.out.println(test2);
        int test3 = input.getInt();
