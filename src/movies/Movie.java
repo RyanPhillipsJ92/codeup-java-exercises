@@ -1,6 +1,7 @@
 package movies;
 
 public class Movie {
+    private static Object MoviesArray;
     private String name;
     private String category;
 
@@ -23,5 +24,11 @@ public class Movie {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+
+
+    public static void main(String[] args) {
+        System.out.println(MoviesArray);
     }
 }
